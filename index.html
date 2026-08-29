@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Anshuman Nigam - ML & AI Engineer</title>
+<title>Anshuman Nigam - AI & Data Engineer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,700;1,900&family=Barlow:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
@@ -334,6 +334,16 @@ footer { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center
   .cal-embed-container iframe { min-height: 420px; }
 }
 
+/* ── BANNER IMAGE (imgg1) ── */
+.banner-shell { border-bottom: 1px solid var(--gray-2); }
+.banner-wrap { padding: 2.5rem calc(80px + 2.5rem) 2.5rem 2.5rem; }
+.banner-img-frame { border: 1px solid var(--gray-2); overflow: hidden; position: relative; background: var(--gray-1); }
+.banner-img-frame img { width: 100%; display: block; max-height: 480px; object-fit: cover; }
+@media(max-width:900px) {
+  .banner-wrap { padding: 1.75rem 1.5rem; }
+  .banner-img-frame img { max-height: 320px; }
+}
+
 /* ── SCROLL REVEAL ── */
 .sr { opacity:0; transform:translateY(28px); transition: opacity .65s ease, transform .65s ease; }
 .sr.on { opacity:1; transform:translateY(0); }
@@ -484,7 +494,7 @@ footer { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center
     <li><a href="#contact">Contact</a></li>
   </ul>
   <div class="nav-end">
-    <div class="nav-right">ML & AI Engineer <span>✦</span> Available</div>
+    <div class="nav-right">AI & Data Engineer <span>✦</span> Available</div>
     <button class="theme-toggle" onclick="toggleTheme()" id="theme-btn">
       <span class="tog-icon" id="tog-icon">◐</span>
       <span id="tog-label">Light</span>
@@ -504,29 +514,29 @@ footer { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center
   <a href="#education" onclick="closeMenu()">Education</a>
   <a href="#booking" onclick="closeMenu()">Book a Call</a>
   <a href="#contact" onclick="closeMenu()">Contact</a>
-  <div class="mobile-menu-foot">ML & AI Engineer <span>✦</span> Available</div>
+  <div class="mobile-menu-foot">AI & Data Engineer <span>✦</span> Available</div>
 </div>
 
 <!-- HERO -->
 <section id="hero">
   <div class="hero-main">
     <div class="hero-name-block">
-      <div class="hero-overline">ML & AI Engineer</div>
+      <div class="hero-overline">AI & Data Engineer</div>
       <h1 class="name">
         <span class="inv">Anshuman</span><br>
         <span>Ni<span class="acc">g</span>am</span>
       </h1>
       <p class="hero-bio-short">
-        Building intelligent systems at the frontier of machine learning, healthcare AI, and data science. From pharmacy demand forecasting to production ML pipelines — turning raw data into decisions.
+        Building intelligent systems at the frontier of machine learning, banking, and healthcare AI. From pharmacy demand forecasting to production ML pipelines at scale - turning raw data into decisions.
       </p>
       <a href="#booking" class="book-cta-btn" style="margin-top:2rem;align-self:flex-start;">Book a 15-min Call →</a>
     </div>
     <div class="hero-right-panel">
       <div class="hero-status">
         <div class="panel-label">current_status</div>
-        <div class="kv-row"><span class="kv-k">role</span><span class="kv-v">AI Engineer</span></div>
-        <div class="kv-row"><span class="kv-k">company</span><span class="kv-v">WeLaunch</span></div>
-        <div class="kv-row"><span class="kv-k">university</span><span class="kv-v">BITS Pilani — Goa</span></div>
+        <div class="kv-row"><span class="kv-k">role</span><span class="kv-v">Data Engineer</span></div>
+        <div class="kv-row"><span class="kv-k">company</span><span class="kv-v">Standard Chartered</span></div>
+        <div class="kv-row"><span class="kv-k">university</span><span class="kv-v">BITS Pilani - Goa</span></div>
         <div class="kv-row"><span class="kv-k">degree</span><span class="kv-v">B.E. (Hons.) ME + M.Sc. Bio</span></div>
         <div class="kv-row"><span class="kv-k">status</span><span class="kv-v"><span class="badge-live">Open to roles</span></span></div>
       </div>
@@ -546,8 +556,8 @@ footer { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center
       <div class="stat-label">Forecast Accuracy</div>
     </div>
     <div class="hero-stat">
-      <div class="stat-num">2</div>
-      <div class="stat-label">Startups Contributed</div>
+      <div class="stat-num">3</div>
+      <div class="stat-label">Companies Contributed</div>
     </div>
     <div class="hero-stat">
       <div class="stat-num">1✦</div>
@@ -560,8 +570,10 @@ footer { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center
 <div class="ticker-wrap">
   <div class="ticker">
     <span class="ticker-item">Machine Learning<span class="sep">◆</span></span>
+    <span class="ticker-item">Banking AI<span class="sep">◆</span></span>
     <span class="ticker-item">Deep Learning<span class="sep">◆</span></span>
     <span class="ticker-item">Time Series<span class="sep">◆</span></span>
+    <span class="ticker-item">Data Engineering<span class="sep">◆</span></span>
     <span class="ticker-item">Recommender Systems<span class="sep">◆</span></span>
     <span class="ticker-item">Healthcare AI<span class="sep">◆</span></span>
     <span class="ticker-item">Python<span class="sep">◆</span></span>
@@ -571,8 +583,10 @@ footer { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center
     <span class="ticker-item">Facebook Prophet<span class="sep">◆</span></span>
     <span class="ticker-item">Neural Networks<span class="sep">◆</span></span>
     <span class="ticker-item">Machine Learning<span class="sep">◆</span></span>
+    <span class="ticker-item">Banking AI<span class="sep">◆</span></span>
     <span class="ticker-item">Deep Learning<span class="sep">◆</span></span>
     <span class="ticker-item">Time Series<span class="sep">◆</span></span>
+    <span class="ticker-item">Data Engineering<span class="sep">◆</span></span>
     <span class="ticker-item">Recommender Systems<span class="sep">◆</span></span>
     <span class="ticker-item">Healthcare AI<span class="sep">◆</span></span>
     <span class="ticker-item">Python<span class="sep">◆</span></span>
@@ -600,7 +614,7 @@ footer { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center
       <div class="skill-cell"><div class="sk-cat">Machine Learning</div><div class="sk-items"><span class="sk-pill">Scikit-Learn</span><span class="sk-pill">XGBoost</span><span class="sk-pill">Random Forest</span><span class="sk-pill">Rec. Systems</span></div></div>
       <div class="skill-cell"><div class="sk-cat">Deep Learning</div><div class="sk-items"><span class="sk-pill">TensorFlow</span><span class="sk-pill">ANN</span><span class="sk-pill">CNN</span></div></div>
       <div class="skill-cell"><div class="sk-cat">Time Series</div><div class="sk-items"><span class="sk-pill">Facebook Prophet</span><span class="sk-pill">Forecasting</span><span class="sk-pill">Trend Analysis</span></div></div>
-      <div class="skill-cell"><div class="sk-cat">Domain</div><div class="sk-items"><span class="sk-pill">Healthcare AI</span><span class="sk-pill">Bioinformatics</span><span class="sk-pill">Clinical Trials</span></div></div>
+      <div class="skill-cell"><div class="sk-cat">Domain</div><div class="sk-items"><span class="sk-pill">Banking AI</span><span class="sk-pill">Healthcare AI</span><span class="sk-pill">Bioinformatics</span><span class="sk-pill">Clinical Trials</span></div></div>
     </div>
   </div>
 </section>
@@ -611,39 +625,47 @@ footer { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center
     <div class="section-num">02</div>
     <div class="section-head-right">
       <h2 class="section-title sr">Work <em>History</em></h2>
-      <span class="section-tag">4 Roles</span>
+      <span class="section-tag">5 Roles</span>
     </div>
   </div>
   <div class="section-body" style="padding-left: 80px; padding-top:0; padding-bottom:0;">
     <div class="exp-item sr">
-      <div class="exp-date"><div class="exp-d-from">Jan 2026</div><div class="exp-d-to">Present</div></div>
+      <div class="exp-date"><div class="exp-d-from">Jul 2026</div><div class="exp-d-to">Present</div></div>
       <div class="exp-content">
-        <div class="exp-role">AI Engineer</div>
-        <div class="exp-company">WeLaunch</div>
-        <div class="exp-desc">Developing and deploying AI-powered products in an early-stage startup. Spanning model development, integration pipelines, and production ML systems.</div>
+        <div class="exp-role">Data Engineer</div>
+        <div class="exp-company">Standard Chartered</div>
+        <div class="exp-desc">Building and maintaining data pipelines and infrastructure for banking systems - data reliability, transformation, and platform work supporting analytics and ML use cases at scale.</div>
       </div>
     </div>
     <div class="exp-item sr sr-d1">
-      <div class="exp-date"><div class="exp-d-from">Oct 2025</div><div class="exp-d-to">Present</div></div>
+      <div class="exp-date"><div class="exp-d-from">Jan 2026</div><div class="exp-d-to">Jun 2026</div></div>
       <div class="exp-content">
-        <div class="exp-role">Data Scientist</div>
-        <div class="exp-company">KAHANI Health — US Startup</div>
-        <div class="exp-desc">Applying ML and data science to healthcare problems — predictive modeling, data pipelines, and analytical reporting for a US-based health-tech startup.</div>
+        <div class="exp-role">AI Engineer</div>
+        <div class="exp-company">WeLaunch</div>
+        <div class="exp-desc">Developed and deployed AI-powered products in an early-stage startup. Spanning model development, integration pipelines, and production ML systems.</div>
       </div>
     </div>
     <div class="exp-item sr sr-d2">
-      <div class="exp-date"><div class="exp-d-from">2023</div><div class="exp-d-to">2024</div></div>
+      <div class="exp-date"><div class="exp-d-from">Oct 2025</div><div class="exp-d-to">Dec 2025</div></div>
       <div class="exp-content">
-        <div class="exp-role">Teaching Assistant</div>
-        <div class="exp-company">BITS Pilani — Online BSc. CS Program</div>
-        <div class="exp-desc">Supported students in General Biology within BITS Pilani's online computer science program, bridging biological and computational thinking.</div>
+        <div class="exp-role">Data Scientist</div>
+        <div class="exp-company">KAHANI Health - US Startup</div>
+        <div class="exp-desc">Applied ML and data science to healthcare problems - predictive modeling, data pipelines, and analytical reporting for a US-based health-tech startup.</div>
       </div>
     </div>
     <div class="exp-item sr sr-d3">
+      <div class="exp-date"><div class="exp-d-from">2023</div><div class="exp-d-to">2024</div></div>
+      <div class="exp-content">
+        <div class="exp-role">Teaching Assistant</div>
+        <div class="exp-company">BITS Pilani - Online BSc. CS Program</div>
+        <div class="exp-desc">Supported students in General Biology within BITS Pilani's online computer science program, bridging biological and computational thinking.</div>
+      </div>
+    </div>
+    <div class="exp-item sr sr-d4">
       <div class="exp-date"><div class="exp-d-from">Jun 2024</div><div class="exp-d-to">Aug 2024</div></div>
       <div class="exp-content">
         <div class="exp-role">Analyst Intern</div>
-        <div class="exp-company">Fortis Healthcare — Gurugram</div>
+        <div class="exp-company">Fortis Healthcare - Gurugram</div>
         <div class="exp-desc">Data analysis and reporting inside a leading Indian hospital network. Groundwork that led directly to building ForecastRx.</div>
       </div>
     </div>
@@ -682,7 +704,7 @@ footer { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center
         <div class="proj-body">
           <div class="proj-index">// 002</div>
           <div class="proj-title">Decision Tree from Scratch</div>
-          <div class="proj-desc">Multi-class classifier built in pure NumPy/Pandas — entropy, information gain, recursive splitting. No ML library shortcuts. Understanding from first principles.</div>
+          <div class="proj-desc">Multi-class classifier built in pure NumPy/Pandas - entropy, information gain, recursive splitting. No ML library shortcuts. Understanding from first principles.</div>
           <div class="proj-metrics"><span class="proj-met">92% accuracy</span><span class="proj-met">Zero dependencies</span></div>
           <a href="https://github.com/AnshumanNigam/decision-tree-from-scratch" target="_blank" class="proj-link">View on GitHub <span class="arrow">→</span></a>
         </div>
@@ -717,7 +739,7 @@ footer { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center
     </div>
   </div>
   <div class="section-body">
-    <p class="oss-intro sr">My public work — repositories, tools, and contributions built in the open. Everything here is free to use, fork, and build on. The ML community taught me through open code; this is how I give back.</p>
+    <p class="oss-intro sr">My public work - repositories, tools, and contributions built in the open. Everything here is free to use, fork, and build on. The ML community taught me through open code; this is how I give back.</p>
     <div class="oss-grid sr sr-d1">
       <div class="oss-card">
         <div class="oss-repo">ForecastRx <span class="oss-tag">Author</span></div>
@@ -728,7 +750,7 @@ footer { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center
       <div class="oss-card">
         <div class="oss-repo">Decision Tree <span class="oss-tag">Author</span></div>
         <div class="oss-org">github.com/AnshumanNigam/decision-tree-from-scratch</div>
-        <div class="oss-desc">A pure-NumPy implementation of a decision tree classifier built for educational purposes — ideal for anyone learning ML from first principles.</div>
+        <div class="oss-desc">A pure-NumPy implementation of a decision tree classifier built for educational purposes - ideal for anyone learning ML from first principles.</div>
         <div class="oss-meta"><span class="oss-stat"><span class="oss-lang-dot" style="background:#3572A5"></span>Python</span><span class="oss-stat">★ Public</span><a href="https://github.com/AnshumanNigam/decision-tree-from-scratch" target="_blank" class="oss-link">View →</a></div>
       </div>
       <div class="oss-card">
@@ -739,7 +761,7 @@ footer { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center
       </div>
       <div class="oss-card" style="display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:0.6rem;">
         <div class="oss-repo" style="opacity:0.3;">More repos</div>
-        <div class="oss-org" style="opacity:0.3;">Actively contributing — check GitHub for latest activity</div>
+        <div class="oss-org" style="opacity:0.3;">Actively contributing - check GitHub for latest activity</div>
         <a href="https://github.com/AnshumanNigam" target="_blank" class="oss-link" style="margin-left:0;margin-top:0.5rem;">github.com/AnshumanNigam →</a>
       </div>
     </div>
@@ -760,13 +782,13 @@ footer { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center
     <div class="edu-row sr">
       <div class="edu-cell">
         <div class="edu-degree">B.E. (Hons.) Mechanical Engineering</div>
-        <div class="edu-school">BITS Pilani — Goa Campus</div>
-        <div class="edu-year">2022 — Present · Integrated</div>
+        <div class="edu-school">BITS Pilani - Goa Campus</div>
+        <div class="edu-year">2022 - Present · Integrated</div>
       </div>
       <div class="edu-cell">
         <div class="edu-degree">M.Sc. Biological Sciences</div>
-        <div class="edu-school">BITS Pilani — Goa Campus</div>
-        <div class="edu-year">2022 — Present · Integrated</div>
+        <div class="edu-school">BITS Pilani - Goa Campus</div>
+        <div class="edu-year">2022 - Present · Integrated</div>
       </div>
     </div>
     <div class="cpub-grid sr sr-d2" style="margin-top: 2rem;">
@@ -778,8 +800,8 @@ footer { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center
       <div class="cpub-col">
         <div class="cpub-head">Publications & Wins</div>
         <div class="cpub-item"><span class="cpub-icon">📄</span><div><div class="cpub-name">Site initiation visits and essential documents in maintaining integrity and compliance in clinical trials</div><div class="cpub-org">Indian Journal of Health & Well-being · Jul 2024</div></div></div>
-        <div class="cpub-item"><span class="cpub-icon">🏆</span><div><div class="cpub-name">AI/ML Hackathon — 1st Place</div><div class="cpub-org">Knowledge Institute of Technology · Jun 2025</div></div></div>
-        <div class="cpub-item"><span class="cpub-icon">📝</span><div><div class="cpub-name">In silico formation of neurons — Research Presentation</div><div class="cpub-org">BITS Pilani · Feb 2023</div></div></div>
+        <div class="cpub-item"><span class="cpub-icon">🏆</span><div><div class="cpub-name">AI/ML Hackathon - 1st Place</div><div class="cpub-org">Knowledge Institute of Technology · Jun 2025</div></div></div>
+        <div class="cpub-item"><span class="cpub-icon">📝</span><div><div class="cpub-name">In silico formation of neurons - Research Presentation</div><div class="cpub-org">BITS Pilani · Feb 2023</div></div></div>
       </div>
     </div>
   </div>
@@ -796,7 +818,7 @@ footer { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center
     </div>
   </div>
   <div class="cal-wrap">
-    <p class="cal-intro sr">Want to talk about a project, role, or just exchange ideas on ML? Pick a slot that works for you — no fluff, just a focused 15-minute conversation.</p>
+    <p class="cal-intro sr">Want to talk about a project, role, or just exchange ideas on ML? Pick a slot that works for you, no fluff, just a focused 15-minute conversation.</p>
     <div class="cal-embed-container sr sr-d1">
       <div style="width:100%;height:100%;overflow:scroll" id="my-cal-inline" data-cal-link="anshuman-nigam/15min" data-cal-namespace="15min" data-cal-config='{"layout":"month_view"}'></div>
     </div>
@@ -872,7 +894,7 @@ function closeMenu() {
 }
 
 // ── TYPEWRITER ──
-const phrases = ['Machine Learning','Healthcare AI','Time Series','Deep Learning','Data Science','Neural Networks'];
+const phrases = ['Machine Learning','Healthcare AI','Banking AI','Data Engineering','Financial ML','Deep Learning','Time Series','Data Science','Neural Networks'];
 let pi = 0, ci = 0, del = false;
 const twEl = document.getElementById('tw');
 function type() {
@@ -923,7 +945,7 @@ async function handleContact() {
       body: JSON.stringify({ name: n, email: e, message: m })
     });
     if (res.ok) {
-      s.style.color = 'var(--accent)'; s.textContent = "// message sent ✓ — I'll get back to you soon";
+      s.style.color = 'var(--accent)'; s.textContent = "// message sent ✓ - I'll get back to you soon";
       document.getElementById('cf-name').value = '';
       document.getElementById('cf-email').value = '';
       document.getElementById('cf-msg').value = '';
@@ -932,11 +954,11 @@ async function handleContact() {
     } else {
       const data = await res.json();
       s.style.color = '#ff4444';
-      s.textContent = data?.errors?.[0]?.message ? `// ${data.errors[0].message}` : '// something went wrong — try emailing directly';
+      s.textContent = data?.errors?.[0]?.message ? `// ${data.errors[0].message}` : '// something went wrong - try emailing directly';
       btn.textContent = 'Send Message'; btn.disabled = false;
     }
   } catch {
-    s.style.color = '#ff4444'; s.textContent = '// network error — try emailing directly';
+    s.style.color = '#ff4444'; s.textContent = '// network error - try emailing directly';
     btn.textContent = 'Send Message'; btn.disabled = false;
   }
 }
