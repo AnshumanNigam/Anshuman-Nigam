@@ -1,0 +1,11 @@
+{
+  "name": "Anshuman Nigam",
+  "short_name": "Anshuman Nigam",
+  "start_url": "/Anshuman-Nigam/",
+  "display": "standalone",
+  "background_color": "#f5f3ee",
+  "theme_color": "#11110f",
+  "icons": [
+    {"src": "/Anshuman-Nigam/icon.svg", "sizes": "64x64", "type": "image/svg+xml"}
+  ]
+}
