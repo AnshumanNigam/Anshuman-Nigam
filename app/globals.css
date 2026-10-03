@@ -274,3 +274,203 @@ button { font: inherit; }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
   .reveal { opacity: 1 !important; transform: none !important; }
 }
+
+
+/* =========================================
+   DARK MODE CONTRAST FIX
+   Paste at the END of app/globals.css
+   ========================================= */
+
+/* Light theme defaults */
+:root {
+  color-scheme: light;
+  --background: #f7f7f5;
+  --foreground: #202020;
+  --muted: #666666;
+  --border: #deded9;
+  --surface: #ffffff;
+  --accent: #2563eb;
+}
+
+/* Dark theme */
+html.dark,
+html[data-theme="dark"],
+html.dark body,
+html[data-theme="dark"] body {
+  color-scheme: dark;
+  --background: #111111;
+  --foreground: #f2f2f0;
+  --muted: #b5b5b0;
+  --border: #303030;
+  --surface: #191919;
+  --accent: #8ab4ff;
+}
+
+/* Main page */
+html.dark body,
+html[data-theme="dark"] body {
+  background-color: var(--background) !important;
+  color: var(--foreground) !important;
+}
+
+/* Main containers and sections */
+html.dark main,
+html.dark section,
+html.dark footer,
+html.dark article,
+html.dark [class*="section"],
+html[data-theme="dark"] main,
+html[data-theme="dark"] section,
+html[data-theme="dark"] footer,
+html[data-theme="dark"] article,
+html[data-theme="dark"] [class*="section"] {
+  color: var(--foreground);
+}
+
+/* Headings must never become nearly black */
+html.dark h1,
+html.dark h2,
+html.dark h3,
+html.dark h4,
+html.dark h5,
+html.dark h6,
+html.dark strong,
+html.dark b,
+html[data-theme="dark"] h1,
+html[data-theme="dark"] h2,
+html[data-theme="dark"] h3,
+html[data-theme="dark"] h4,
+html[data-theme="dark"] h5,
+html[data-theme="dark"] h6,
+html[data-theme="dark"] strong,
+html[data-theme="dark"] b {
+  color: #f5f5f3 !important;
+}
+
+/* Body text and descriptions */
+html.dark p,
+html.dark li,
+html.dark label,
+html.dark small,
+html.dark span,
+html.dark time,
+html.dark address,
+html[data-theme="dark"] p,
+html[data-theme="dark"] li,
+html[data-theme="dark"] label,
+html[data-theme="dark"] small,
+html[data-theme="dark"] span,
+html[data-theme="dark"] time,
+html[data-theme="dark"] address {
+  color: inherit;
+}
+
+/* Muted text, dates, captions, secondary descriptions */
+html.dark .muted,
+html.dark .subtitle,
+html.dark .description,
+html.dark .eyebrow,
+html.dark [class*="muted"],
+html.dark [class*="subtitle"],
+html.dark [class*="description"],
+html.dark [class*="eyebrow"],
+html[data-theme="dark"] .muted,
+html[data-theme="dark"] .subtitle,
+html[data-theme="dark"] .description,
+html[data-theme="dark"] .eyebrow,
+html[data-theme="dark"] [class*="muted"],
+html[data-theme="dark"] [class*="subtitle"],
+html[data-theme="dark"] [class*="description"],
+html[data-theme="dark"] [class*="eyebrow"] {
+  color: var(--muted) !important;
+}
+
+/* Navigation */
+html.dark header,
+html.dark nav,
+html.dark header a,
+html.dark nav a,
+html[data-theme="dark"] header,
+html[data-theme="dark"] nav,
+html[data-theme="dark"] header a,
+html[data-theme="dark"] nav a {
+  color: var(--foreground);
+}
+
+html.dark header,
+html.dark nav,
+html[data-theme="dark"] header,
+html[data-theme="dark"] nav {
+  border-color: var(--border);
+}
+
+/* Links */
+html.dark a,
+html[data-theme="dark"] a {
+  color: var(--accent);
+}
+
+html.dark a:hover,
+html[data-theme="dark"] a:hover {
+  color: #ffffff;
+}
+
+/* Cards, panels and interactive surfaces */
+html.dark article,
+html.dark [class*="card"],
+html.dark [class*="panel"],
+html.dark [class*="tile"],
+html[data-theme="dark"] article,
+html[data-theme="dark"] [class*="card"],
+html[data-theme="dark"] [class*="panel"],
+html[data-theme="dark"] [class*="tile"] {
+  border-color: var(--border);
+}
+
+/* Remove accidental opacity that makes text unreadable.
+   Keep opacity on decorative elements and animation wrappers. */
+html.dark h1,
+html.dark h2,
+html.dark h3,
+html.dark .experience-title,
+html.dark .project-title,
+html.dark .section-title,
+html[data-theme="dark"] h1,
+html[data-theme="dark"] h2,
+html[data-theme="dark"] h3,
+html[data-theme="dark"] .experience-title,
+html[data-theme="dark"] .project-title,
+html[data-theme="dark"] .section-title {
+  opacity: 1 !important;
+}
+
+/* Form controls */
+html.dark input,
+html.dark textarea,
+html.dark select,
+html[data-theme="dark"] input,
+html[data-theme="dark"] textarea,
+html[data-theme="dark"] select {
+  color: var(--foreground);
+  background-color: var(--surface);
+  border-color: var(--border);
+}
+
+/* Selection */
+html.dark ::selection,
+html[data-theme="dark"] ::selection {
+  color: #ffffff;
+  background-color: #315fa8;
+}
+
+/* Respect accessibility preferences */
+@media (prefers-reduced-motion: reduce) {
+  html.dark *,
+  html.dark *::before,
+  html.dark *::after,
+  html[data-theme="dark"] *,
+  html[data-theme="dark"] *::before,
+  html[data-theme="dark"] *::after {
+    scroll-behavior: auto !important;
+  }
+}
