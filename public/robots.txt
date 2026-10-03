@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://anshumannigam.github.io/Anshuman-Nigam/sitemap.xml
